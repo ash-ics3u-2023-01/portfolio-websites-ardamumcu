@@ -1,23 +1,112 @@
-<title>Arda's Useful Bookmarks</title>
-<center><h2><b>Arda's Useful Bookmarks </b></h2></center>
-<style>
-body {
-  background-image: url('vivid-blurred-colorful-background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-</style>
-<br>
-<a href="https://www.w3schools.com/">W3Schools</a>
-<br>
-<a href="https://www.youtube.com/">Youtube </a>
-<br>
-<a href="https://sites.google.com/ocsb.ca/jamieson-ics/home">Mr. Jamieson's Website </a>
-<br>
-<a href="https://app.mystudentdashboard.com/workspaces">Hapara Workspace </a>
-<br>
-<a href="https://drive.google.com/drive/my-drive">Google Drive </a>
-<br>
-<a href="https://mail.google.com/mail/u/0/#inbox">Gmail </a>
-<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arda's Useful Bookmarks</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url('vivid-blurred-colorful-background.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+    }
+
+    #topnav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    #topnav a {
+      float: left;
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    #topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    #topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #bookmark-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    .bookmark {
+      margin-bottom: 20px;
+    }
+
+    .bookmark a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .bookmark p {
+      margin: 10px 0;
+    }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="topnav">
+    <a href="index.html">Home</a>
+    <a href="about_me.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a class="active" href="usefulbookmarks.html">Useful Bookmarks</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div id="bookmark-container">
+    <div class="bookmark">
+      <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+      <p>This is a link to W3Schools where I learn about coding.</p>
+    </div>
+
+    <div class="bookmark">
+      <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+      <p>This is a link to YouTube where I watch educational videos.</p>
+    </div>
+
+    <div class="bookmark">
+      <a href="https://sites.google.com/ocsb.ca/jamieson-ics/home" target="_blank">Mr. Jamieson's Website</a>
+      <p>This is a link to Mr. Jamieson's website for class updates.</p>
+    </div>
+
+    <div class="bookmark">
+      <a href="https://app.mystudentdashboard.com/workspaces" target="_blank">Hapara Workspace</a>
+      <p>This is a link to Hapara Workspace for school resources.</p>
+    </div>
+
+    <div class="bookmark">
+      <a href="https://drive.google.com/drive/my-drive" target="_blank">Google Drive</a>
+      <p>This is a link to my Google Drive where I have important documents.</p>
+    </div>
+
+    <div class="bookmark">
+      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a>
+      <p>This is a link to my Gmail where I check for emails from teachers and friends.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
