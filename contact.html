@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+
+
+    <style>
+        h1 {
+          text-align: center;
+        }
+        .topnav {
+          background-color: #333;
+          overflow: hidden;
+        }
+
+        .topnav a {
+          float: left;
+          display: block;
+          color: #ffffff;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .section {
+            width: 300px;
+            height: 400px;
+            cursor: pointer;
+            position: relative;
+            perspective: 1000px;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .section:hover .card {
+            transform: rotateY(180deg);
+        }
+
+        .face {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #333;
+            background-color: #fff;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 8px;
+        }
+
+        .card .back {
+            transform: rotateY(180deg);
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+  <body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="about_me.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="usefulbookmarks.html">Useful Bookmarks</a>
+    <a class="active" href="contact.html">Contact</a>
+  </div>
+<body>
+  
+    <header>
+      <div class="container">
+          <h1 class="logo"></h1>
+
+        
+      </div>
+      <br>
+      <br>
+        <center><h1>About Me</h1></center>
+      <br>
+      <center><h3>You can find my contact information including my email, phone number, address and my birthday</h3></center>
+    </header>
+
+    <main>
+        <div class="section">
+            <div class="card">
+                <div class="face">
+                    <img src="phone.png" alt="Image 1">
+                </div>
+                <div class="face back">
+                    <p>+1 819 830 0057</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="card">
+                <div class="face">
+                    <img src="gmail.png" alt="Image 2">
+                </div>
+                <div class="face back">
+                    <p>arda.mumcu@stu.ocsb.ca </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="card">
+                <div class="face">
+                    <img src="download-23 (1).png" alt="Image 3">
+                </div>
+                <div class="face back">
+                    <p>1007 Mountain Drive, Gotham
+</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="card">
+                <div class="face">
+                    <img src="birthday.png" alt="Image 4">
+                </div>
+                <div class="face back">
+                    <p>My birthday is October 24th, 2007. You can wish me happy birthday on this day!</p>
+                </div>s
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
